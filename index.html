@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="wing.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Nikhil Dhirmalani</title>
+  </head>
+
+  <body>
+    <main>
+      <section class='landing'>
+        <div>
+          <h1 class='animated fadeInDown headline center'>Nikhil Dhirmalani</h1>
+          <div class='animated fadeInDown tagline center'>Software Developer | Cloud Technology Enthusiast | Big Data and Machine Learning</div>
+        </div>
+        <div class='pointer animated'>↓</div>
+      </section>
+      <section class="intro container" id="intro">
+        <div>
+          <h2 class='header heading'>Hello! 👋</h2>
+         
+
+          <p> I am Nikhil Dhirmalani, I have completed my Master’s degree in Applied Computer Science (MACS) 
+            from Dalhousie University and Bachelors degree in Electrical and Electronics Engineering (EEE) 
+            from SRM University. Being from non CS background I have completed five pre-requisite undergrad 
+            computer science courses (Software Development, Data Structures and Algorithms, 
+            Databases, Computer Networks, SDC) from Dalhousie before starting my masters.
+             I have two years of hands-on experience as a Software Engineer at Capgemini and 
+            recently completed my Co-Op as Data Scientist from Scotiabank.
+          </p>
+        </div>
+
+      </section>
+      <section class="projects container">
+        <h2 class="heading">Projects</h2>
+        <div class="cards">
+          <div class="card">
+            <h5 class="card-header">Ship Iceberg Kaggle Competetion</h5>
+            <p class="card-body">
+                A Kaggle competition where we were challenged to build an algorithm that automatically identifies if a remotely sensed
+                target is a ship or iceberg.
+                
+                The data was in the form of an image, therefore I implemented RESNET (Residual Network) in keras, Multi
+                Layer Perceptron (MLP) in tensorflow and convolutional neural network having initial layers of pre-trained
+                VGG net in pytorch.
+                Implemented various techniques like dropout, regularization, Batch Normalization to improve the accuracy of
+                the model. Performed exploratory analysis by visualizing individual Convolution layers, weights, and gradients
+                of layers using Tensorboard.
+            </p>
+            <div class="card-footer center text-center">
+              <p><a href="https://github.com/NK273610/Ship-Iceberg-Challenge" target="_blank">View on Github</a></p>
+            </div>
+          </div>
+          <div class="card">
+            <h5 class="card-header">Medico Android Application</h5>
+            <p class="card-body">
+                An Android-based application used to get information about medical drugs, their benefits and side-effects.
+                Implemented various visualizations i.e. Pie chart, Word cloud etc. to summarize information and present it to
+                users. Implemented Term Frequency-Inverse Document Frequency algorithm to get unique words from drug
+                reviews and show those words in a word cloud.
+                Implemented CRUD operations for the user domain using google firebase as a storage option.
+            </p>
+            <div class="card-footer center text-center">
+              <p><a href="https://github.com/NK273610/MedicoMobile-App" target="_blank">View on Github</a></p>
+            </div>
+          </div>
+          <div class="card">
+            <h5 class="card-header">Movie Critic Web Application</h5>
+            <p class="card-body">
+                A Java-based website used to get information about different movies and recommend movies to users based on their likes.
+                Spring Boot framework is used in back-end and HTML, CSS and JavaScript in front-end. Jenkins was used as
+                a Continuous Integration tool to build the application, run JUnit test cases and deploy it on Microsoft Azure
+                server.
+                Implemented Jaccard Similarity Score algorithm for recommending movies to users and implemented Loggers
+                to log errors in the file and on the console. Responsible for writing unit, integration and browser tests of the
+                application.
+            </p>
+            <div class="card-footer center text-center">
+              <p><a href="https://github.com/NK273610/MovieCriticApp" target="_blank">View on Github</a></p>
+            </div>
+          </div>
+          <div class="card">
+            <h5 class="card-header">Document Clustering using K-Means Algorithm</h5>
+            <p class="card-body">
+                Document clustering is an approach of grouping similar documents together.
+                Implemented K-Means clustering algorithm using map-reduce transformations in Apache spark from scratch
+                and compared results with K-Means implemented using MLib (machine learning library) in spark.
+                Developed a web crawler in python using selenium to collect document data from the IEEE website. Currently
+                working on the same project with a different approach using vector embeddings for each word and learning it
+                using Conv net.
+            </p>
+            <div class="card-footer center text-center">
+              <p><a href="https://github.com/NK273610/DocumentClusteringKmeans" target="_blank">View on Github</a></p>
+            </div>
+          </div>
+          <div class="card">
+              <h5 class="card-header">Twitter Sentiment Analysis</h5>
+              <p class="card-body">
+                  An application that streams tweets from twitter api based on user given queries and 
+                  predicts the tweet sentiment.
+                Streamed tweets using Tweepy twitter library and implemented Naive Bayes and Expected Maximization
+                algorithms from scratch in python to predict the tweet sentiment.
+                Developed an interface using HTML, CSS, and JavaScript and implemented various visualizations using d3.js.
+              </p>
+            </div>
+            <div class="card">
+                <h5 class="card-header">Market Risk Intelligence (MARI)</h5>
+                <p class="card-body">
+                    Stress value at risk (SVar) prediction from the given portfolios and market data.
+                    Implemented neural network models, Boosting algorithms and performed the experiments as part of initial ML
+                    modeling. Used spark, dask, pandas for data transformation and preparation.
+                    Feature exploration and project pipeline set up on GCP. Use Dataflow for transformations and Big query to
+                    store the data.              
+                  </p>
+              </div>
+        </div>
+      </section>
+    
+      
+      <section class="contact container">
+        <h2 class="heading">Contact</h2>
+        <div class="find-widget">
+            Phone Number :  <a href="#">+1 902-210-6123</a>
+          </div>
+          <div class="find-widget">
+              Home Address :  <a href="#"> Pembroke Street, Toronto, Ontario. Canada-M5A 2N8.</a>
+            </div>
+            <div class="find-widget">
+                Email Id :  <a href="mailto:nikhildhirmalani@gmail.com">nikhildhirmalani@gmail.com</a>
+              </div>
+
+       
+      </section>
+      <footer class="container">
+        <small>
+          This site was made with OSS tools: Styles - <a href="http://usewing.ml/" target="_blank">Wing CSS</a> |
+          Smooth Scrolling - <a href="http://callmecavs.com/jump.js/" target="_blank">Jump.js</a> | Animations - <a href="https://daneden.github.io/animate.css/" target="_blank">Animate.css</a> | 
+          Form - <a href="https://formspree.io/" target="_blank">Formspree</a>
+        </small>
+      </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jump.js/1.0.2/jump.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+
+</html>
